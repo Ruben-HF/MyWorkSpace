@@ -17,7 +17,7 @@ function updateDateTime() {
 
 
 function toggleDarkMode() {
-    document.body.classList.toggle('dark-mode');
+    document.body.classList.toggle('dark-mode'); 
     footer.classList.toggle('dark-mode');
 
     const darkModeButton = document.getElementById('darkModeButton');
@@ -27,6 +27,7 @@ function toggleDarkMode() {
         darkModeButton.textContent = '🌙';
     }
 }
+
 
 // Actualizar la fecha y hora cada segundo
 setInterval(updateDateTime, 1000);
