@@ -53,6 +53,12 @@ darkModeButton.addEventListener('click', toggleDarkMode);
 updateDateTime();
 
 
+
+
+
+
+//FUNCIONES PARA CAMBIAR TAMAÑO DE LAS SECCIONES
+
 // Función para cambiar el tamaño de la sección Quick-Notes-App
 const quickNotesButton = document.getElementById("quick-notes-button");
 const quickNotesSection = document.querySelector(".Quick-Notes-App");
@@ -76,6 +82,37 @@ quickRemindersButton.addEventListener("click", () => {
         quickRemindersSection.style.width = "45%";
     }
 });
+
+// Función para cambiar el tamaño de la sección Concepts-App
+const conceptsButton = document.getElementById("concepts-button");
+const conceptsSection = document.querySelector(".Concepts-App");
+
+conceptsButton.addEventListener("click", () => {
+    if (conceptsSection.style.width === "45%" || conceptsSection.style.width === "") {
+        conceptsSection.style.width = "100%";
+    } else {
+        conceptsSection.style.width = "45%";
+    }
+});
+
+// Función para cambiar el tamaño de la sección LinkDash-App
+const LinkDashButton = document.getElementById("linkdash-button");
+const LinkDashSection = document.querySelector(".LinkDash-App");
+
+LinkDashButton.addEventListener("click", () => {
+    if (LinkDashSection.style.width === "45%" || LinkDashSection.style.width === "") {
+        LinkDashSection.style.width = "100%";
+    } else {
+        LinkDashSection.style.width = "45%";
+    }
+});
+
+
+
+
+
+//FUNCIONES PARA OCULTAR LAS SECCIONES
+
 
 // Función para ocultar o mostrar la sección Quick-Notes-App al presionar el botón correspondiente
 const quickNotesButtonView = document.getElementById("quicknotes-button-view");
@@ -101,5 +138,27 @@ remindersButtonView.addEventListener("click", () => {
     }
 });
 
+// Función para ocultar o mostrar la sección Concepts al presionar el botón correspondiente
+const conceptsButtonView = document.getElementById("concepts-button-view");
+const conceptsSectionView = document.getElementById("concepts");
 
+conceptsButtonView.addEventListener("click", () => {
+    if (conceptsSectionView.style.display === "none") {
+        conceptsSectionView.style.display = "flex";
+    } else {
+        conceptsSectionView.style.display = "none";
+    }
+});
+
+// Función para ocultar o mostrar la sección LinkDash al presionar el botón correspondiente
+const linkdashButtonView = document.getElementById("linkdash-button-view");
+const linkdashSectionView = document.getElementById("linkdashSection");
+
+linkdashButtonView.addEventListener("click", () => {
+    if (linkdashSectionView.style.display === "none") {
+        linkdashSectionView.style.display = "flex";
+    } else {
+        linkdashSectionView.style.display = "none";
+    }
+});
 

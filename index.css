@@ -77,6 +77,32 @@
     box-shadow: 0px 6px 12px rgba(255, 255, 255, 0.15);
 }
 
+.dark-mode .MWS-Apps .Concepts-App {
+    background-color: #333; /* Fondo oscuro */
+    color: #fff; /* Texto claro */
+    box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.1);
+    padding: 12px; /* Reduce el espaciado interior */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dark-mode .MWS-Apps .Concepts-App:hover {
+    background-color: #444; /* Fondo oscuro al pasar el cursor */
+    box-shadow: 0px 6px 12px rgba(255, 255, 255, 0.15);
+}
+
+.dark-mode .MWS-Apps .LinkDash-App {
+    background-color: #333; /* Fondo oscuro */
+    color: #fff; /* Texto claro */
+    box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.1);
+    padding: 12px; /* Reduce el espaciado interior */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dark-mode .MWS-Apps .LinkDash-App:hover {
+    background-color: #444; /* Fondo oscuro al pasar el cursor */
+    box-shadow: 0px 6px 12px rgba(255, 255, 255, 0.15);
+}
+
 .dark-mode footer {
     background-color: #222;
     color: #fff;
@@ -321,6 +347,47 @@ main {
 }
 
 .MWS-Apps .Quick-Reminders-App:hover {
+    background-color: #fff;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+
+.Concepts-App{
+    min-width: 320px;
+    width: 45%;
+    background-color: #f5f5f5;
+    padding: 12px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    align-items: center;
+    margin-bottom: 18px;
+}
+
+.MWS-Apps .Concepts-App:hover {
+    background-color: #fff;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.LinkDash-App{
+    min-width: 320px;
+    width: 45%;
+    background-color: #f5f5f5;
+    padding: 12px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    align-items: center;
+    margin-bottom: 18px;
+}
+
+.MWS-Apps .LinkDash-App:hover {
     background-color: #fff;
     box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
 }
