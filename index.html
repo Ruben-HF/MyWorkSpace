@@ -55,7 +55,7 @@
                         </div>
                     
                         <div class="app">
-                            <a href="#linkdash">LinkDash</a>
+                            <a href="#linkdashSection">LinkDash</a>
                             <button id="linkdash-button-view" class="emoji-button">🔗</button>
                         </div>
                     
@@ -75,7 +75,10 @@
                             <h1>Quick Notes</h1>
                             <h2>When You Need It</h2>
                         </div>
-                        <button id="quick-notes-button" class="size-button">👁️</button>
+                        <div class="buttons">
+                            <button id="use-QN" class="use-button">👁️</button>
+                            <button id="quick-notes-button" class="size-button">📐</button>
+                        </div>
                     </section>
                 
                     <!-- Reminders -->
@@ -84,16 +87,32 @@
                             <h1>Reminders</h1>
                             <h2>Solve Your Day</h2>
                         </div>
-                        <button id="quick-reminders-button" class="size-button">👁️</button>
+                        <div class="buttons">
+                            <button id="use-QR" class="use-button">👁️</button>
+                            <button id="quick-reminders-button" class="size-button">📐</button>
+                        </div>
+                        <section id="use-reminders">
+                            <div class="todo-input">
+                                <input type="text" id="reminder-input" placeholder="Enter your reminder">
+                                <button id="add-reminder-button" class="emoji-button">➕</button>
+                            </div>
+                            <h2>Todo List</h2>
+                            <ul id="todo-list"></ul>
+                            <h2>Completed</h2>
+                            <ul id="completed-list"></ul>
+                        </section>
                     </section>
 
-                     <!-- Concepts -->
+                    <!-- Concepts -->
                     <section class="Concepts-App" id="concepts">
                         <div class="dataApp">
                             <h1>Concepts</h1>
                             <h2>Your Knowledge Base</h2>
                         </div>
-                        <button id="concepts-button" class="size-button">👁️</button>
+                        <div class="buttons">
+                            <button id="use-CP" class="use-button">👁️</button>
+                            <button id="concepts-button" class="size-button">📐</button>
+                        </div>
                     </section>
 
                     <!-- LinkDash -->
@@ -102,7 +121,11 @@
                             <h1>LinkDash</h1>
                             <h2>Keep Connect</h2>
                         </div>
-                        <button id="linkdash-button" class="size-button">👁️</button>
+                        <div class="buttons">
+                            <button id="use-LD" class="use-button">👁️</button>
+                            <button id="linkdash-button" class="size-button">📐</button>
+                        </div>
+                        
                     </section>
                 </section>
 
