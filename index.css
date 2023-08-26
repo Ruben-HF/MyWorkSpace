@@ -504,17 +504,15 @@ main {
 }
 
 #add-reminder-button {
-    padding: 9px 15px;
-    background-color: #007bff;
-    color: white;
+    background-color: transparent;
     border: none;
-    border-radius: 5px;
+    font-size: 16px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: transform 0.3s ease, color 0.3s ease;
 }
 
 #add-reminder-button:hover {
-    background-color: #0056b3;
+    transform: scale(1.2);
 }
 
 .todo-input{
