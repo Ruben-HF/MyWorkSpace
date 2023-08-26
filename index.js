@@ -76,3 +76,30 @@ quickRemindersButton.addEventListener("click", () => {
         quickRemindersSection.style.width = "45%";
     }
 });
+
+// Función para ocultar o mostrar la sección Quick-Notes-App al presionar el botón correspondiente
+const quickNotesButtonView = document.getElementById("quicknotes-button-view");
+const quickNotesSectionView = document.getElementById("quicknotes");
+
+quickNotesButtonView.addEventListener("click", () => {
+    if (quickNotesSectionView.style.display === "none") {
+        quickNotesSectionView.style.display = "flex";
+    } else {
+        quickNotesSectionView.style.display = "none";
+    }
+});
+
+// Función para ocultar o mostrar la sección Quick-Reminders-App al presionar el botón correspondiente
+const remindersButtonView = document.getElementById("reminders-button-view");
+const remindersSectionView = document.getElementById("reminders");
+
+remindersButtonView.addEventListener("click", () => {
+    if (remindersSectionView.style.display === "none") {
+        remindersSectionView.style.display = "flex";
+    } else {
+        remindersSectionView.style.display = "none";
+    }
+});
+
+
+
