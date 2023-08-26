@@ -51,3 +51,28 @@ darkModeButton.addEventListener('click', toggleDarkMode);
 
 // Llamar a la función de actualización de fecha una vez al cargar la página
 updateDateTime();
+
+
+// Función para cambiar el tamaño de la sección Quick-Notes-App
+const quickNotesButton = document.getElementById("quick-notes-button");
+const quickNotesSection = document.querySelector(".Quick-Notes-App");
+
+quickNotesButton.addEventListener("click", () => {
+    if (quickNotesSection.style.width === "45%" || quickNotesSection.style.width === "") {
+        quickNotesSection.style.width = "100%";
+    } else {
+        quickNotesSection.style.width = "45%";
+    }
+});
+
+// Función para cambiar el tamaño de la sección Quick-Reminders-App
+const quickRemindersButton = document.getElementById("quick-reminders-button");
+const quickRemindersSection = document.querySelector(".Quick-Reminders-App");
+
+quickRemindersButton.addEventListener("click", () => {
+    if (quickRemindersSection.style.width === "45%" || quickRemindersSection.style.width === "") {
+        quickRemindersSection.style.width = "100%";
+    } else {
+        quickRemindersSection.style.width = "45%";
+    }
+});

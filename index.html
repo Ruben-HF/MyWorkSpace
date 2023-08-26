@@ -45,13 +45,13 @@
                         </div>
 
                         <div class="app">
-                            <a href="#concepts">Concepts</a>
-                            <button class="emoji-button">💡</button>
-                        </div>
-                        
-                        <div class="app">
                             <a href="#reminders">Reminders</a>
                             <button class="emoji-button">⏰</button>
+                        </div>
+
+                        <div class="app">
+                            <a href="#concepts">Concepts</a>
+                            <button class="emoji-button">💡</button>
                         </div>
                         
                         <div class="app">
@@ -70,18 +70,22 @@
     
                 <section class="Quick-View">
                     <!-- Quick Notes -->
-                    <section class="Quick-Notes">
-                        <div class="quick-notes-view">
-                            <h1>Quick.Notes</h1>
-                            
+                    <section class="Quick-Notes-App" id="quicknotes">
+                        <div class="dataApp">
+                            <h1>Quick Notes</h1>
+                            <h2>Apunta lo importante</h2>
                         </div>
-
+                        <button id="quick-notes-button" class="size-button">👁️</button>
                     </section>
+                
                     <!-- Reminders -->
-                    <section class="Quick-Reminders">
-                        
+                    <section class="Quick-Reminders-App" id="reminders">
+                        <div class="dataApp">
+                            <h1>Reminders</h1>
+                            <h2>Resuelve los pendientes</h2>
+                        </div>
+                        <button id="quick-reminders-button" class="size-button">👁️</button>
                     </section>
-
                 </section>
 
 
@@ -95,6 +99,8 @@
             <p class="footer-content">&copy; AFIX SOLUTIONS</p>
         </footer>
 
+        
+        <script src="/index.js"></script>
     </body>
-    <script src="/index.js"></script>
+    
 </html>
