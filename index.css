@@ -496,7 +496,7 @@ main {
 }
 
 #reminder-input {
-    width: 70%;
+    width: 85%;
     padding: 9px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -504,6 +504,7 @@ main {
 }
 
 #add-reminder-button {
+    width: 8%;
     background-color: transparent;
     border: none;
     font-size: 16px;
