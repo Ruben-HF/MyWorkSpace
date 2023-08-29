@@ -123,7 +123,7 @@
 }
 
 .dark-mode #add-reminder-button:hover {
-    background-color: #0a3980;
+    color: #0a3980;
 }
 
 .dark-mode #todo-list li,
